@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
+import Modal from './Modal';
 
 export default class WebDevProject extends Component {
   state = {
@@ -7,7 +8,7 @@ export default class WebDevProject extends Component {
   }
 
   render() {
-    let { thumb, title, style, x, y, width, height } = this.props
+    let { thumb, title, style, x, y, width } = this.props
     const { hover } = this.state
     let newStyle = { ...style }
     if (newStyle.transform) {

@@ -1,7 +1,9 @@
-#webDev {
+#skill {
   background: var(--background);
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -14,8 +16,6 @@
     margin-bottom: 2.5rem;
     text-shadow: 5px 3px 3px black;
   }
-
-
   
   .content {
     max-width: 1200px;
@@ -24,15 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 80%;
-    
-    h1:after {
-      content: "Web Development"
-    }
-    
-    .top-margin {
-      margin-top: 3rem;
-    }
+    font-size: 5px;
     
     ul {
       
@@ -43,29 +37,29 @@
       li {
         // min-width: 12.5rem;
         // max-width: 20%;
-        height: 20rem;
-        width: 20rem;
+        height: 17em;
+        width: 20em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: .5rem .5rem 0 .5rem;
+        margin: .5em .5em 0 .5em;
         
         svg {
-          width: 11rem;
-          height: 11rem;
+          width: 11em;
+          height: 11em;
         }
         img {
-          width: 11rem;
-          height: 11rem;
+          width: 11em;
+          height: 11em;
         }
         h3 {
           color: var(--font-color);
-          font-size: 2.2rem;
+          font-size: 2.2em;
           text-align: center;
           font-weight: lighter;
-          margin-top: .8rem;
-          height: 5.5rem;
+          margin-top: .8em;
+          // height: 5.5em;
           text-shadow: 3px 2px 2px black;
         }
       }
@@ -74,7 +68,7 @@
   #projects {
     background: var(--dark-background);
     box-sizing: border-box;
-    // min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -100,7 +94,8 @@
 
         h2 {
           font-size: 3rem;
-          
+          letter-spacing: .2rem;
+          text-shadow: 3px 3px 3px black;
         }
 
         li {
@@ -187,12 +182,12 @@
 
 
 @media (max-width: 1100px) {
-  #webDev {
+  #skill {
 
     .content {
       ul {
         li {
-          width: 15rem;
+          width: 15em;
         }
       }
     }
@@ -213,7 +208,7 @@
 }
 
 @media (max-width: 950px) {
-  #webDev {
+  #skill {
 
     .content {
       width: 85%;
@@ -253,26 +248,23 @@
 }
 
 @media (max-width: 750px) {
-  #webDev {
+  #skill {
     .content {
       width: 95%;
-      h1:after {
-        content: "Skills"
-      }
       ul {
         li {
-          height: 15rem;
-          width: 14rem;
+          height: 15em;
+          width: 13em;
           margin: 7px;
           
           img {
-            width: 10rem;
-            height: 10rem;
+            width: 10em;
+            height: 10em;
           }
           h3 {
-            font-size: 2rem;
+            font-size: 2em;
             // font-weight: lighter;
-            margin-top: .8rem;
+            margin-top: .8em;
           }
         }
         .non-import {
@@ -284,11 +276,11 @@
 }
 
 @media (max-width: 500px) {
-  #webDev {
+  #skill {
     .content {
       ul {
         li {
-          width: 10rem;
+          width: 12em;
         }
       }
     }
@@ -298,8 +290,7 @@
         #aside {
           ul {
             li {
-              font-size: 2rem;
-              
+              font-size: 2em;
             }
           }
         }
@@ -313,29 +304,34 @@
 }
 
 @media (max-width: 400px) {
-  #webDev {
+  #skill {
     .content {
       .non-import-small {
         display: none;
+      }
+      ul {
+        // li {
+        //   height: 15em;
+        //   width: 15em;
+        // }
       }
     }
 
     #projects {
       padding-top: 1rem;
       h1 {
-        font-size: 4rem;
+        font-size: 4em;
       }
       main {
         #aside {
           padding: 0 5px;
           ul {
             li {
-              font-size: 1.7rem;
+              font-size: 1.7em;
             }
           }
         }
       }
     }
   }
-
 }

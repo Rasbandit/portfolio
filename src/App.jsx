@@ -1,51 +1,68 @@
-import React from "react";
+import React, { Component } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect
 } from "react-router-dom";
 
+import webDevObject from './projectObjects/webDev'
+import adobeObject from './projectObjects/adobe'
+
 import Home from './components/Home'
-import Skills from './components/Skills'
 import Other from "./components/Other";
 import Nav from './components/Nav';
-import WebDev from './components/WebDev'
+import Page from './components/Page'
 
 
 import './scss/App.scss'
 
-function AnimationExample() {
-  return (
-    <Router>
-      <Route
-        render={({ location }) => (
-          <>
-            <Nav />
+class AnimationExample extends Component {
+  constructor() {
+    super();
 
-            <TransitionGroup>
-              <CSSTransition
-                key={location.key}
-                classNames="fade"
-                timeout={850}
-              >
-                <Switch location={location}>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/about" component={Home} />
-                  <Route exact path="/webdev" component={WebDev} />
-                  <Route exact path="/adobe" component={Other} />
-                  <Route exact path="/education" component={Other} />
-                  <Route render={() => <div>Not Found</div>} />
-                </Switch>
-              </CSSTransition>
-            </TransitionGroup>
-          </>
-        )}
-      />
-    </Router>
-  );
+    this.state = {
+      showNav: false
+    }
+  }
+
+  toggleNav = (showNav = !this.state.showNav) => {
+    this.setState({ showNav })
+  }
+
+  render() {
+
+    return (
+
+      <Router>
+        <Route
+          render={({ location }) => (
+            <>
+              <Nav toggleNav={this.toggleNav} showNav={this.state.showNav} />
+              <div id="page-container" style={{ right: this.state.showNav ? '250px' : 0 }}>
+                <TransitionGroup>
+                  <CSSTransition
+                    key={location.key}
+                    classNames="fade"
+                    timeout={850}
+                  >
+                    <Switch location={location}>
+                      <Route exact path="/" component={Home} />
+                      <Route exact path="/about" component={Home} />
+                      <Route exact path="/webdev" render={(props) => <Page {...props} {...webDevObject} />} />
+                      <Route exact path="/adobe" render={(props) => <Page {...props} {...adobeObject} />} />
+                      <Route exact path="/education" component={Other} />
+                      <Route render={() => <div>Not Found</div>} />
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              </div>
+            </>
+          )}
+        />
+      </Router>
+    );
+  }
 }
 
 
