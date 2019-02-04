@@ -121,7 +121,6 @@
         position: relative;
 
         .web-project {
-          // height: 140px;
           position: absolute;
           top: 0;
           left: 0;
@@ -160,9 +159,9 @@
               opacity: 0.7;
               z-index: -1;
             }
-            span {
+            img {
               opacity: 1;
-              font-size: 5rem;
+              width: 6rem;
             }
           }
           
@@ -290,7 +289,7 @@
         #aside {
           ul {
             li {
-              font-size: 2em;
+              font-size: 1.6em;
             }
           }
         }
@@ -327,7 +326,7 @@
           padding: 0 5px;
           ul {
             li {
-              font-size: 1.7em;
+              font-size: 1.5em;
             }
           }
         }

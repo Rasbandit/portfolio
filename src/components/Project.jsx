@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import FontAwesome from 'react-fontawesome'
-import Modal from './Modal';
+import React, { Component } from 'react';
+import search from '../assets/icons/search.svg'
 
 export default class WebDevProject extends Component {
   state = {
@@ -8,7 +7,7 @@ export default class WebDevProject extends Component {
   }
 
   render() {
-    let { thumb, title, style, x, y, width } = this.props
+    let { imgMedium, title, style, x, y, width, selectProject } = this.props
     const { hover } = this.state
     let newStyle = { ...style }
     if (newStyle.transform) {
@@ -22,13 +21,13 @@ export default class WebDevProject extends Component {
       newStyle.transform = `translate3d(${x}px, ${y}px, 0)`
     }
     return (
-      <div style={{ ...newStyle, width, height: width / 1.4883 }} className="web-project" onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })}>
+      <div style={{ ...newStyle, width, height: width / 1.763 }} className="web-project" onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })} onClick={() => selectProject(title)}>
         <div className={hover ? 'thumb-overlay hover' : 'thumb-overlay'} >
-          <FontAwesome name="search-plus" style={{ color: '#e0e0e0' }} />
+          <img src={search} alt="" />
           <div className="thumb-blue"></div>
         </div>
         <figure>
-          <img src={thumb} alt={title} />
+          <img src={imgMedium} alt={title} />
         </figure>
       </div>
     )

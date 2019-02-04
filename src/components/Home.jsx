@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import splash from '../images/Videos/splash.mp4';
+import splash from '../assets/Videos/splash.m4v';
+import splashImg from '../assets/work/adobe/splash.jpg';
 
 export default class Home extends Component {
   render() {
-    console.log(this.props.style)
     return (
       <div >
         <div className="splash" style={this.props.style}>
-          <video src={splash} autoPlay loop></video>
+          <video src={splash} poster={splashImg} autoPlay loop></video>
           <div className="overlay">
             <h1>Todd Rasband</h1>
           </div>
