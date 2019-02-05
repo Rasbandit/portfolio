@@ -6,11 +6,11 @@ import {
   Route,
 } from "react-router-dom";
 
-import webDevObject from './projectObjects/webDev'
-import adobeObject from './projectObjects/adobe'
+import webDevObject from './projectObjects/webDev';
+import adobeObject from './projectObjects/adobe';
+import educationObject from './projectObjects/education';
 
 import Home from './components/Home'
-import Other from "./components/Other";
 import Nav from './components/Nav';
 import Page from './components/Page'
 
@@ -51,7 +51,7 @@ class AnimationExample extends Component {
                       <Route exact path="/about" component={Home} />
                       <Route exact path="/webdev" render={(props) => <Page {...props} {...webDevObject} />} />
                       <Route exact path="/adobe" render={(props) => <Page {...props} {...adobeObject} />} />
-                      <Route exact path="/education" component={Other} />
+                      <Route exact path="/education" render={(props) => <Page {...props} {...educationObject} />} />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
                   </CSSTransition>

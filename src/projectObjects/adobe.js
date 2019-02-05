@@ -1,9 +1,9 @@
 //Icons
-import afterEffects from '../assets/icons/After_Effects.svg';
-import audition from '../assets/icons/audition.svg';
-import illustrator from '../assets/icons/Illustrator.svg';
-import photoshop from '../assets/icons/Photoshop.svg';
-import premiere from '../assets/icons/Premiere.svg';
+import afterEffects from '../assets/work/adobe/icons/After_Effects.svg';
+import audition from '../assets/work/adobe/icons/audition.svg';
+import illustrator from '../assets/work/adobe/icons/Illustrator.svg';
+import photoshop from '../assets/work/adobe/icons/Photoshop.svg';
+import premiere from '../assets/work/adobe/icons/Premiere.svg';
 
 //assets
 import c from '../assets/work/adobe/c.jpg';

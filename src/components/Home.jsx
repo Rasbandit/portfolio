@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import splash from '../assets/Videos/splash.m4v';
-import splashImg from '../assets/work/adobe/splash.jpg';
+import splashImg from '../assets/work/splash.jpg';
 
 export default class Home extends Component {
   render() {
