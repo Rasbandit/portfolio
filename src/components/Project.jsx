@@ -21,7 +21,7 @@ export default class WebDevProject extends Component {
       newStyle.transform = `translate3d(${x}px, ${y}px, 0)`
     }
     return (
-      <div style={{ ...newStyle, width, height: width / 1.763 }} className="web-project" onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })} onClick={() => selectProject(title)}>
+      <div style={{ ...newStyle, width, height: width / 1.773 }} className="web-project" onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })} onClick={() => selectProject(title)}>
         <div className={hover ? 'thumb-overlay hover' : 'thumb-overlay'} >
           <img src={search} alt="" />
           <div className="thumb-blue"></div>
