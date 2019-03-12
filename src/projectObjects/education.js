@@ -55,7 +55,7 @@ export default {
       title: 'Computer Literacy Video Series',
       text: 'I wanted to learn sockets.io and and the canvas API in HTML 5. I found a tutorial on how to build some basics in canvas and I later built asteroids and included a server to manage all the state on so it could live update all connected computers using sockets, allowing you to jointly control a ship. A working version of the site can be found here here. The GitHub Repo for the project can be found here.',
       type: 'Video Series',
-      links: [{icon: videoSmall, alt:"Video Icon", text: "Full Series", link: 'https://vimeo.com/album/5349754'}]
+      links: [{icon: videoSmall, alt:"Video Icon", text: "Series", link: 'https://vimeo.com/album/5349754'}]
     },
     {
       imgMedium: vsCodeImg,
@@ -64,7 +64,7 @@ export default {
       title: 'Intro to VS Video Series',
       text: 'I wanted to learn sockets.io and and the canvas API in HTML 5. I found a tutorial on how to build some basics in canvas and I later built asteroids and included a server to manage all the state on so it could live update all connected computers using sockets, allowing you to jointly control a ship. A working version of the site can be found here here. The GitHub Repo for the project can be found here.',
       type: 'Video Series',
-      links: [{icon: videoSmall, alt:"Video Icon", text: "Full Series", link: 'https://vimeo.com/album/5735591'}]
+      links: [{icon: videoSmall, alt:"Video Icon", text: "Series", link: 'https://vimeo.com/album/5735591'}]
     },
     {
       imgMedium: gitGoodMedium,
@@ -72,7 +72,7 @@ export default {
       title: 'Git Good Guide',
       text: 'I wanted to learn sockets.io and and the canvas API in HTML 5. I found a tutorial on how to build some basics in canvas and I later built asteroids and included a server to manage all the state on so it could live update all connected computers using sockets, allowing you to jointly control a ship. A working version of the site can be found here here. The GitHub Repo for the project can be found here.',
       type: 'Curriculum',
-      links: [{icon: gitHubSmall, alt:"GitHub Icon", text: "Full Repo", link: 'https://github.com/rasbandit/git-good-guide'}]
+      links: [{icon: gitHubSmall, alt:"GitHub Icon", text: "Repo", link: 'https://github.com/rasbandit/git-good-guide'}]
     },
     {
       imgMedium: toyProblemMedium,
@@ -80,7 +80,7 @@ export default {
       title: 'JS Toy Problems',
       text: 'I wanted to learn sockets.io and and the canvas API in HTML 5. I found a tutorial on how to build some basics in canvas and I later built asteroids and included a server to manage all the state on so it could live update all connected computers using sockets, allowing you to jointly control a ship. A working version of the site can be found here here. The GitHub Repo for the project can be found here.',
       type: 'Curriculum',
-      links: [{icon: gitHubSmall, alt:"GitHub Icon", text: "Full Repo", link: 'https://github.com/devmountain/js-toy-problems'}]
+      links: [{icon: gitHubSmall, alt:"GitHub Icon", text: "Repo", link: 'https://github.com/devmountain/js-toy-problems'}]
     }
   ],
   filters: [
